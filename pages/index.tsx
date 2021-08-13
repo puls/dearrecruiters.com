@@ -1,49 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Dear Recruiters:</title>
-    <style type="text/css" media="screen">
-      body {
-        background: #eadbde;
-        font-weight: 400;
-        font-size: 14pt;
-      }
-      h1 {
-        font-weight: 700;
-      }
-      div {
-        width: 600px;
-        margin: 2em auto;
-        background-color: #fff;
-        padding: 2em;
-        border: 1px solid #ccc;
-      }
-      .footer {
-        font-size: smaller;
-        font-style: italic;
-      }
-    </style>
-    <link rel="stylesheet" href="https://use.typekit.net/ayr2eql.css" />
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(["_setAccount", "UA-24555711-1"]);
-      _gaq.push(["_trackPageview"]);
+import Head from "next/head";
 
-      (function() {
-        var ga = document.createElement("script");
-        ga.type = "text/javascript";
-        ga.async = true;
-        ga.src =
-          ("https:" == document.location.protocol
-            ? "https://ssl"
-            : "http://www") + ".google-analytics.com/ga.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </head>
-  <body>
-    <div>
+function HomePage() {
+  return (
+    <main>
+      <Head>
+        <title>Dear Recruiters:</title>
+      </Head>
       <h1>Dear Recruiters:</h1>
       <p>
         Hi! It's your friendly local software engineer. You probably came across
@@ -62,7 +24,9 @@
         along, we'd probably be interested in hearing more about it and
         exploring our options!
       </p>
-      <p><strong>Seriously, we like you.</strong></p>
+      <p>
+        <strong>Seriously, we like you.</strong>
+      </p>
       <p>
         But here's the rub: unless you tell us exactly what company you're
         working for, it doesn't come across as a really compelling opportunity.
@@ -83,20 +47,22 @@
         it's probably not a compelling opportunity.
       </p>
       <p>
-        <strong
-          >Please, for the love of all that is holy, lead with the company's
-          name.</strong
-        >
-        That's all we ask.
+        <strong>
+          Please, for the love of all that is holy, lead with the company's
+          name.
+        </strong>
+        &nbsp; That's all we ask.
       </p>
       <hr />
-      <p class="footer">
+      <p className="footer">
         <a href="http://dearrecruiters.com">DearRecruiters.com</a> is a free
         service from <a href="http://twitter.com/puls">@puls</a>. Shout out to
         <a href="http://thanksno.com">ThanksNo.com</a> for the inspiration.
         Obviously, the prospective candidate you emailed didn't personally write
         this, but it's the sentiment that counts.
       </p>
-    </div>
-  </body>
-</html>
+    </main>
+  );
+}
+
+export default HomePage;

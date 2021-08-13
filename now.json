@@ -1,6 +1,0 @@
-{
-  "alias": ["dearrecruiters.com"],
-  "builds": [{ "src": "index.html", "use": "@now/static" }],
-  "name": "dearrecruiters.com",
-  "version": 2
-}
